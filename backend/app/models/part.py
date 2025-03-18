@@ -1,6 +1,4 @@
-import enum
-
-from sqlalchemy import Column, Date, Enum, ForeignKey, Integer, String
+from sqlalchemy import Column, ForeignKey, Integer, String
 from sqlalchemy.orm import relationship
 
 from backend.app.models.base import Base
@@ -18,4 +16,9 @@ class Part(Base):
         Integer, ForeignKey("dim_suppliers.supplier_id"), nullable=False
     )
 
-    supplier = relationship("Supplier")
+    suppliers = relationship("Supplier", back_populates="parts")
+
+    warranties = relationship(
+        "Warranty",
+        back_populates="part",
+    )

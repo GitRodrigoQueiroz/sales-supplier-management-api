@@ -19,4 +19,7 @@ class Purchase(Base):
     purchance_date = Column(Date, nullable=False)
     part_id = Column(Integer, ForeignKey("dim_parts.part_id"), nullable=False)
 
+    warranties = relationship("Warranty", back_populates="purchance")
+
     part = relationship("Part")
+
