@@ -9,11 +9,10 @@ class Part(Base):
 
     part_id = Column(Integer, primary_key=True, autoincrement=True)
     part_name = Column(String(255), nullable=False)
-    last_id_purchase = Column(
-        Integer, ForeignKey("dim_purchances.purchance_id"), nullable=False
-    )
     supplier_id = Column(
-        Integer, ForeignKey("dim_suppliers.supplier_id"), nullable=False
+        Integer,
+        ForeignKey("dim_suppliers.supplier_id", ondelete="CASCADE"),
+        nullable=False,
     )
 
     suppliers = relationship("Supplier", back_populates="parts")

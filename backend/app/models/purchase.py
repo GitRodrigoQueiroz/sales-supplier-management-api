@@ -17,9 +17,12 @@ class Purchase(Base):
     purchance_id = Column(Integer, primary_key=True, autoincrement=True)
     purchance_type = Column(Enum(PurchaseType), nullable=False)
     purchance_date = Column(Date, nullable=False)
-    part_id = Column(Integer, ForeignKey("dim_parts.part_id"), nullable=False)
+    part_id = Column(
+        Integer,
+        ForeignKey("dim_parts.part_id", ondelete="CASCADE"),
+        nullable=False,
+    )
 
     warranties = relationship("Warranty", back_populates="purchance")
 
     part = relationship("Part")
-

@@ -1,0 +1,21 @@
+"location_id","market","country","province","city"
+1,north america,USA,California,Los Angeles
+2,north america,USA,Texas,Houston
+3,north america,Canada,Ontario,Toronto
+4,north america,Mexico,Jalisco,Guadalajara
+5,european union,Germany,Bavaria,Munich
+6,european union,France,Île-de-France,Paris
+7,european union,Italy,Lombardy,Milan
+8,european union,Spain,Catalonia,Barcelona
+9,european union,Netherlands,South Holland,Rotterdam
+10,east asia,Japan,Tokyo,Tokyo
+11,east asia,Japan,Osaka,Osaka
+12,east asia,South Korea,Seoul,Seoul
+13,east asia,China,Guangdong,Shenzhen
+14,east asia,China,Shanghai,Shanghai
+15,south america,Brazil,São Paulo,São Paulo
+16,south america,Argentina,Buenos Aires,Buenos Aires
+17,oceania,Australia,New South Wales,Sydney
+18,oceania,New Zealand,Auckland,Auckland
+19,africa,South Africa,Gauteng,Johannesburg
+20,middle east,UAE,Dubai,Dubai
