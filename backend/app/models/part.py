@@ -15,9 +15,9 @@ class Part(Base):
         nullable=False,
     )
 
-    suppliers = relationship("Supplier", back_populates="parts")
+    supplier = relationship("Supplier", back_populates="part")
 
-    warranties = relationship(
+    warranty = relationship(
         "Warranty",
         back_populates="part",
     )

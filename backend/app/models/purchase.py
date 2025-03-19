@@ -23,6 +23,6 @@ class Purchase(Base):
         nullable=False,
     )
 
-    warranties = relationship("Warranty", back_populates="purchance")
+    warranty = relationship("Warranty", back_populates="purchance")
 
     part = relationship("Part")

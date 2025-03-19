@@ -1,4 +1,4 @@
-from sqlalchemy import Column, String
+from sqlalchemy import Column, Integer, String
 
 from backend.app.models.base import Base
 
@@ -6,12 +6,17 @@ from backend.app.models.base import Base
 class User(Base):
     __tablename__ = "user"
 
+    id = Column(
+        Integer,
+        primary_key=True,
+        autoincrement=True,
+    )
     user_name = Column(
         String(50),
         nullable=False,
-        primary_key=True,
+        unique=True,
     )
     password = Column(
-        String(50),
+        String(200),
         nullable=False,
     )
