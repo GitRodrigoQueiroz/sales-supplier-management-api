@@ -1,7 +1,0 @@
-"claim_key","vehicle_id","repair_date","client_comment","tech_comment","part_id","classifed_failured","location_id","purchance_id"
-1,4,2024-05-15,Air filter needs replacement,Replaced air filter,4,clogged filter,4,4
-2,5,2024-06-20,Fuel pump malfunction,Installed new fuel pump,5,pump failure,5,5
-3,6,2024-07-10,Transmission belt snapped,Replaced transmission belt,6,belt wear,6,1
-4,1,2024-08-05,Spark plug misfiring,Replaced spark plugs,7,ignition issue,1,2
-5,2,2024-09-12,Alternator not charging,Installed new alternator,8,electrical failure,2,3
-6,3,2024-10-01,Radiator leaking coolant,Replaced radiator,9,leak detected,3,4

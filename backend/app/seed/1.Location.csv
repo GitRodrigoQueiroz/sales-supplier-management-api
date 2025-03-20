@@ -1,0 +1,21 @@
+"market","country","province","city"
+north america,USA,California,Los Angeles
+north america,USA,Texas,Houston
+north america,Canada,Ontario,Toronto
+north america,Mexico,Jalisco,Guadalajara
+european union,Germany,Bavaria,Munich
+european union,France,Île-de-France,Paris
+european union,Italy,Lombardy,Milan
+european union,Spain,Catalonia,Barcelona
+european union,Netherlands,South Holland,Rotterdam
+east asia,Japan,Tokyo,Tokyo
+east asia,Japan,Osaka,Osaka
+east asia,South Korea,Seoul,Seoul
+east asia,China,Guangdong,Shenzhen
+east asia,China,Shanghai,Shanghai
+south america,Brazil,São Paulo,São Paulo
+south america,Argentina,Buenos Aires,Buenos Aires
+oceania,Australia,New South Wales,Sydney
+oceania,New Zealand,Auckland,Auckland
+africa,South Africa,Gauteng,Johannesburg
+middle east,UAE,Dubai,Dubai
