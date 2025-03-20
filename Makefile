@@ -3,8 +3,8 @@
 launch-db:
 	docker-compose up
 
-create-database:
-	python3 -m backend.app.db.create_db
+create-db:
+	python3 -m backend.app.scripts.create_db
 
 seed-db:
-	
+	python3 -m backend.app.scripts.seed_db
