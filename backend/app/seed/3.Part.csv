@@ -1,8 +1,4 @@
 "part_name","supplier_id"
-Brake Pad,1
-Engine Filter,2
-Battery Pack,3
-Air Filter,4
 Fuel Pump,5
 Transmission Belt,6
 Spark Plug,7
@@ -19,3 +15,23 @@ Suspension Spring,17
 Wheel Hub,18
 Fuel Injector,19
 Starter Motor,20
+Camshaft,21
+Crankshaft,22
+Throttle Body,23
+Oil Pump,24
+Water Pump,25
+Timing Chain,26
+Piston,27
+Cylinder Head,28
+Connecting Rod,29
+Flywheel,30
+EGR Valve,31
+Mass Airflow Sensor,32
+Oxygen Sensor,33
+Fuel Rail,34
+Glow Plug,35
+Valve Cover,36
+Control Arm,37
+Brake Caliper,38
+Power Steering Hose,39
+Ignition Coil,40
