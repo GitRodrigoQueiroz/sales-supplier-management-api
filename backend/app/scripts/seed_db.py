@@ -4,7 +4,8 @@ import pandas as pd
 from sqlalchemy.orm import sessionmaker
 
 from backend.app.models import *
-from backend.app.session import create_db_engine, credentials_db
+from backend.app.services.db_service import create_db_engine
+from backend.app.session import DATABASE_CREDENTIALS
 
 SEED_DIR = "backend/app/seed/"
 
@@ -50,5 +51,5 @@ def insert_data_from_csv(engine):
 
 
 if __name__ == "__main__":
-    engine = create_db_engine(**credentials_db)
+    engine = create_db_engine(**DATABASE_CREDENTIALS)
     insert_data_from_csv(engine)
