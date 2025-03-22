@@ -33,8 +33,3 @@ O diretório seed contém arquivos CSV com dados de exemplo que são usados para
 
 ### `app/scripts`
 O diretório scripts contém scripts utilitários que ajudam na configuração e manutenção do projeto. Isso inclui scripts para criação do banco de dados, alimentação do banco com dados de seed, entre outros. Esses scripts facilitam tarefas que são executadas fora do ciclo regular da aplicação, como no processo de setup.
-
-## 2. Segurança
-- **Autenticação via JWT**: Protege endpoints sensíveis.
-- **Criptografia**: CPFs armazenados com hashing bcrypt.
-- **Proteção contra CORS**: Configurado para limitar domínios confiáveis.
