@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+
 from backend.app.api import route
 
 app = FastAPI(

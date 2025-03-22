@@ -4,10 +4,10 @@ launch-db:
 	docker-compose up
 
 create-db:
-	python3 -m backend.app.scripts.create_db
+	python3 -m app.scripts.create_db
 
 seed-db:
-	python3 -m backend.app.scripts.seed_db
+	python3 -m app.scripts.seed_db
 
-launch-api
-	uvicorn backend:app --reload
+launch-api:
+	uvicorn app:app --reload
