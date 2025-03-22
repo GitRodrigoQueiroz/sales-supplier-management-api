@@ -19,8 +19,9 @@ Este projeto é uma API REST desenvolvida com FastAPI para gerenciar suppliers, 
 
 ### Clonando o Repositório:
 ```sh
-$ git clone https://github.com/seu-usuario/seu-repositorio.git
-$ cd seu-repositorio
+$ git clone https://github.com/GitRodrigoQueiroz/sales-supplier-management-api.git
+$ cd sales-supplier-management-api
+
 ```
 
 ### Criação do ambiente e instalação das dependências:
@@ -121,9 +122,6 @@ $ pytest tests/
 
 ---
 
-
-
----
 
 ## Autor
 1. Desenvolvido por [Rodrigo Silvestre Queiroz](https://github.com/seu-usuario).
