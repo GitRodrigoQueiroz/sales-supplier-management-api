@@ -11,7 +11,7 @@ from backend.app.session import ACCESS_TOKEN_EXPIRE_MINUTES
 route = APIRouter()
 
 
-@route.post("/token")
+@route.post("/login")
 def login_for_access_token(
     session: Session = get_session,
     form_data: OAuth2PasswordRequestForm = Depends(),

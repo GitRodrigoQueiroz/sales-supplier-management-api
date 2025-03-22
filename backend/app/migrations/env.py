@@ -3,7 +3,7 @@ from logging.config import fileConfig
 from alembic import context
 
 from backend.app.models import Base
-from backend.app.session import create_db_engine, credentials_db
+from backend.app.services.db_service import DATABASE_CREDENTIALS, create_db_engine
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
@@ -71,7 +71,7 @@ def run_migrations_online() -> None:
     #     prefix="sqlalchemy.",
     #     poolclass=pool.NullPool,
     # )
-    connectable = create_db_engine(**credentials_db)
+    connectable = create_db_engine(**DATABASE_CREDENTIALS)
 
     with connectable.connect() as connection:
         context.configure(connection=connection, target_metadata=target_metadata)

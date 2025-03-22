@@ -4,7 +4,7 @@ from jose import JWTError, jwt
 
 from backend.app.session import ALGORITHM, SECRET_KEY
 
-oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="login")
 
 
 @Depends

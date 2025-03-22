@@ -18,7 +18,11 @@ class Supplier(Base):
     )
     location_id = Column(
         Integer,
-        ForeignKey("dim_locations.location_id"),
+        ForeignKey(
+            "dim_locations.location_id",
+            ondelete="CASCADE",
+            onupdate="CASCADE",
+        ),
         nullable=False,
     )
 

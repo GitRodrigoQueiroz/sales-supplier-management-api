@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-from backend.app.api.v1 import token, user
+from backend.app.api.v1 import location, token, user
 
 route = APIRouter()
 
@@ -9,4 +9,7 @@ route.include_router(
 )
 route.include_router(
     user.route,
+)
+route.include_router(
+    location.route,
 )
