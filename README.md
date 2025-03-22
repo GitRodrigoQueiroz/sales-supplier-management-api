@@ -1,8 +1,9 @@
 
-# API REST para Gestão de Suppliers, Transações e Analytics
+# Vehicles Warranties Management API
 
 ## Introdução:
-Este projeto é uma API REST desenvolvida com FastAPI para gerenciar suppliers, transações e gerar dados analíticos. Ele inclui autenticação baseada em JWT, consultas eficientes, e segue boas práticas de segurança.
+Este projeto é uma API REST desenvolvida com FastAPI para gerenciamento de garantias de veículos e geração dados analíticos. Os dados são fictícios e servem
+apenas como exemplo de uso do projeto.
 
 ##  Tecnologias Utilizadas:
 - 🔄  **Gerenciador de dependências**: [uv](https://github.com/astral-sh/uv) 
@@ -19,8 +20,8 @@ Este projeto é uma API REST desenvolvida com FastAPI para gerenciar suppliers, 
 
 ### Clonando o Repositório:
 ```sh
-$ git clone https://github.com/GitRodrigoQueiroz/sales-supplier-management-api.git
-$ cd sales-supplier-management-api
+$ git clone https://github.com/GitRodrigoQueiroz/vehicles-warranties-management-api.git
+$ cd vehicles-warranties-management-api
 
 ```
 
@@ -96,6 +97,8 @@ O **JWT** contém informações (payload) sobre o usuário, como o nome de usuá
 ### Autenticação:
 - `POST /auth/register` - Registro de novo usuário
 - `POST /auth/login` - Login e geração de JWT
+
+## CRUDs
 
 ### Suppliers:
 - `POST /suppliers/` - Criar supplier
