@@ -124,5 +124,5 @@ $ pytest tests/
 
 
 ## Autor
-1. Desenvolvido por [Rodrigo Silvestre Queiroz](https://github.com/seu-usuario).
+1. Desenvolvido por [Rodrigo Silvestre Queiroz](https://github.com/GitRodrigoQueiroz).
 2. Consultar o arquivo `DESIGN.md` para mais informações sobre o design do projeto.
