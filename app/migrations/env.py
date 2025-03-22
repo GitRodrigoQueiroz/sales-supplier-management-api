@@ -1,8 +1,9 @@
 from logging.config import fileConfig
 
 from alembic import context
-from backend.app.models import Base
-from backend.app.services.db_service import DATABASE_CREDENTIALS, create_db_engine
+
+from app.models import Base
+from app.services.db_service import DATABASE_CREDENTIALS, create_db_engine
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.

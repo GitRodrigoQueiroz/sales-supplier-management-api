@@ -1,4 +1,4 @@
-from sqlalchemy import Column, ForeignKey, Integer, String
+from sqlalchemy import Column, Double, ForeignKey, Integer, String
 from sqlalchemy.orm import relationship
 
 from app.models.base import Base
@@ -14,10 +14,9 @@ class Part(Base):
         ForeignKey("dim_suppliers.supplier_id", ondelete="CASCADE"),
         nullable=False,
     )
+    unit_price = Column(
+        Double,
+        nullable=False,
+    )
 
     supplier = relationship("Supplier", back_populates="part")
-
-    warranty = relationship(
-        "Warranty",
-        back_populates="part",
-    )

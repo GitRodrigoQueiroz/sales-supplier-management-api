@@ -1,37 +1,17 @@
-"part_name","supplier_id"
-Fuel Pump,5
-Transmission Belt,6
-Spark Plug,7
-Alternator,8
-Radiator,9
-Headlight,10
-Taillight,11
-Steering Pump,12
-Exhaust Pipe,13
-Turbocharger,14
-Brake Disc,15
-Clutch,16
-Suspension Spring,17
-Wheel Hub,18
-Fuel Injector,19
-Starter Motor,20
-Camshaft,21
-Crankshaft,22
-Throttle Body,23
-Oil Pump,24
-Water Pump,25
-Timing Chain,26
-Piston,27
-Cylinder Head,28
-Connecting Rod,29
-Flywheel,30
-EGR Valve,31
-Mass Airflow Sensor,32
-Oxygen Sensor,33
-Fuel Rail,34
-Glow Plug,35
-Valve Cover,36
-Control Arm,37
-Brake Caliper,38
-Power Steering Hose,39
-Ignition Coil,40
+"part_name","supplier_id",unit_price
+Fuel Pump,1,150
+Transmission Belt,2,50
+Spark Plug,3,10
+Alternator,4,200
+Radiator,5,180
+Headlight,6,120
+Taillight,7,80
+Steering Pump,8,250
+Exhaust Pipe,9,90
+Turbocharger,10,500
+Brake Disc,11,70
+Clutch,12,300
+Suspension Spring,13,120
+Wheel Hub,14,140
+Fuel Injector,15,220
+Starter Motor,16,180

@@ -27,11 +27,6 @@ class Warranty(Base):
         String,
         nullable=False,
     )
-    part_id = Column(
-        Integer,
-        ForeignKey("dim_parts.part_id"),
-        nullable=False,
-    )
     classifed_failured = Column(
         String(50),
         nullable=False,
@@ -48,6 +43,5 @@ class Warranty(Base):
     )
 
     vehicle = relationship("Vehicle", back_populates="warranty")
-    part = relationship("Part", back_populates="warranty")
     location = relationship("Location", back_populates="warranty")
     purchance = relationship("Purchase", back_populates="warranty")

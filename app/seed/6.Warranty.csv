@@ -1,21 +1,15 @@
-"claim_key","vehicle_id","repair_date","client_comment","tech_comment","part_id","classifed_failured","location_id","purchance_id"
-1,1,2024-01-10,Brakes making noise,Replaced worn-out brake pad,1,wear and tear,1,1
-2,2,2024-02-15,Battery not holding charge,Replaced defective battery,3,manufacturing defect,2,3
-3,3,2024-03-20,Check engine light on,Replaced faulty fuel injector,19,sensor failure,3,19
-4,4,2024-04-05,Car overheating,Replaced radiator,9,cooling system failure,4,9
-5,5,2024-05-12,Engine misfiring,Replaced spark plug,7,ignition failure,5,7
-6,6,2024-06-18,Transmission slipping,Replaced transmission belt,6,wear and tear,6,6
-7,7,2024-07-22,Noise when steering,Replaced steering pump,12,hydraulic failure,7,12
-8,8,2024-08-30,Dim headlights,Replaced headlight bulb,10,electrical failure,8,10
-9,9,2024-09-10,Braking vibration,Replaced brake disc,15,wear and tear,9,15
-10,10,2024-10-05,Exhaust smoke,Replaced exhaust pipe,13,clogged exhaust,10,13
-11,11,2024-11-01,Turbo lag,Replaced turbocharger,14,boost pressure issue,11,14
-12,12,2024-12-12,Starter not working,Replaced starter motor,20,electrical failure,12,20
-13,13,2025-01-18,Fuel leakage,Replaced fuel pump,5,seal failure,13,5
-14,14,2025-02-25,Suspension noise,Replaced suspension spring,17,shock absorption failure,14,17
-15,15,2025-03-30,Battery drain,Replaced alternator,8,charging failure,15,8
-16,16,2025-04-10,Clutch slipping,Replaced clutch,16,wear and tear,16,16
-17,17,2025-05-15,Fuel consumption increase,Replaced air filter,4,clogged filter,17,4
-18,18,2025-06-05,Wheel vibration,Replaced wheel hub,18,bearing failure,18,18
-19,19,2025-07-20,Faulty tail light,Replaced taillight,11,electrical failure,19,11
-20,20,2025-08-10,Alternator noise,Replaced alternator,8,bearing failure,20,8
+"claim_key","vehicle_id","repair_date","client_comment","tech_comment","classifed_failured","location_id","purchance_id"
+1,1,2024-01-10,general client comment sample,general tech comment sample,general classifed failured sample,1,1
+2,2,2024-02-15,general client comment sample,general tech comment sample,general classifed failured sample,2,2
+3,3,2024-03-20,general client comment sample,general tech comment sample,general classifed failured sample,3,3
+4,4,2024-04-05,general client comment sample,general tech comment sample,general classifed failured sample,4,4
+5,5,2024-05-12,general client comment sample,general tech comment sample,general classifed failured sample,5,5
+6,6,2024-06-18,general client comment sample,general tech comment sample,general classifed failured sample,6,6
+7,7,2024-07-22,general client comment sample,general tech comment sample,general classifed failured sample,7,7
+8,8,2024-08-30,general client comment sample,general tech comment sample,general classifed failured sample,8,8
+9,9,2024-09-10,general client comment sample,general tech comment sample,general classifed failured sample,9,9
+10,10,2024-10-05,general client comment sample,general tech comment sample,general classifed failured sample,10,10
+11,11,2024-11-01,general client comment sample,general tech comment sample,general classifed failured sample,11,11
+12,12,2024-12-12,general client comment sample,general tech comment sample,general classifed failured sample,12,12
+13,13,2025-01-18,general client comment sample,general tech comment sample,general classifed failured sample,13,13
+14,14,2025-02-25,general client comment sample,general tech comment sample,general classifed failured sample,14,14

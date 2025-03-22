@@ -22,7 +22,10 @@ class Purchase(Base):
         ForeignKey("dim_parts.part_id", ondelete="CASCADE"),
         nullable=False,
     )
+    units = Column(
+        Integer,
+        nullable=False,
+    )
 
     warranty = relationship("Warranty", back_populates="purchance")
-
     part = relationship("Part")
