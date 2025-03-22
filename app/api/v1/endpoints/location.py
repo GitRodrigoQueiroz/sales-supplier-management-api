@@ -5,22 +5,23 @@ from app.schemas import (
     LocationCreate,
     LocationUpdate,
 )
-from app.services.auth_service import get_current_user
+from app.services.auth import check_token_exp, get_payload
 from app.services.db_service import get_session
 from app.services.location import LocationUseCases
 
-route = APIRouter(prefix="/location")
+route = APIRouter(prefix="/location", tags=["Location"])
 
 
 @route.post("/create")
 def location_create(
     locations_create: list[LocationCreate],
-    user: dict = get_current_user,
+    payload: dict = get_payload,
     session: Session = get_session,
 ):
+    check_token_exp(payload.get("exp"))
     lc = LocationUseCases(db_session=session)
     lc.bulk_insert_locations(locations=locations_create)
-    return {"message": "Locations registered successfully"}
+    return {"message": "Location created successfully"}
 
 
 # @route.post("/read")
@@ -37,9 +38,10 @@ def location_create(
 @route.post("/update")
 def location_update(
     locations_update: list[LocationUpdate],
-    user: dict = get_current_user,
+    payload: dict = get_payload,
     session: Session = get_session,
 ):
+    check_token_exp(payload.get("exp"))
     lc = LocationUseCases(db_session=session)
     lc.bulk_update_locations(locations=locations_update)
     return {"message": "Location updated successfully"}
@@ -48,9 +50,10 @@ def location_update(
 @route.post("/delete")
 def location_delete(
     location_ids: list[int],
-    user: dict = get_current_user,
+    payload: dict = get_payload,
     session: Session = get_session,
 ):
+    check_token_exp(payload.get("exp"))
     lc = LocationUseCases(db_session=session)
     lc.bulk_delete_locations(location_ids=location_ids)
     return {"message": "Location deleted successfully"}
