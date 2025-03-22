@@ -1,13 +1,13 @@
 from fastapi import APIRouter
 from sqlalchemy.orm import Session
 
-from backend.app.schemas import (
+from app.schemas import (
     LocationCreate,
     LocationUpdate,
 )
-from backend.app.services.auth_service import get_current_user
-from backend.app.services.db_service import get_session
-from backend.app.services.location import LocationUseCases
+from app.services.auth_service import get_current_user
+from app.services.db_service import get_session
+from app.services.location import LocationUseCases
 
 route = APIRouter(prefix="/location")
 

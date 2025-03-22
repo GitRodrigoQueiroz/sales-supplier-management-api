@@ -1,10 +1,10 @@
 from fastapi import FastAPI
 
-from backend.app.api import route
+from app.api import route
 
 app = FastAPI(
-    title="titulo",
-    description="description",
+    title="Sales Supplier Management API",
+    description="Sales Supplier Management API",
     version="v.1",
 )
 app.include_router(route)

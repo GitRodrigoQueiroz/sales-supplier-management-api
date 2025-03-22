@@ -3,7 +3,7 @@ import enum
 from sqlalchemy import Column, Date, Enum, Integer, String
 from sqlalchemy.orm import relationship
 
-from backend.app.models.base import Base
+from app.models.base import Base
 
 
 class PropulsionType(enum.Enum):

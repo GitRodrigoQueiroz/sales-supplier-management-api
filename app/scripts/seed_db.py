@@ -3,11 +3,11 @@ import os
 import pandas as pd
 from sqlalchemy.orm import sessionmaker
 
-from backend.app.models import *
-from backend.app.services.db_service import create_db_engine
-from backend.app.session import DATABASE_CREDENTIALS
+from app.models import *
+from app.services.db_service import create_db_engine
+from app.session import DATABASE_CREDENTIALS
 
-SEED_DIR = "backend/app/seed/"
+SEED_DIR = "app/seed/"
 
 
 def get_model_by_name(model_name: str):
@@ -25,7 +25,8 @@ def insert_data_from_csv(engine):
 
                     if not model:
                         print(
-                            f"[WARNING] Nenhum modelo encontrado para {model_name}, ignorando..."
+                            f"[WARNING] Nenhum modelo encontrado para "
+                            f"{model_name}, ignorando..."
                         )
                         continue
 
@@ -38,7 +39,8 @@ def insert_data_from_csv(engine):
                         session.bulk_insert_mappings(model, records)
                         session.commit()
                         print(
-                            f"[SUCCESS] Inseridos {len(records)} registros na tabela {model_name}"
+                            f"[SUCCESS] Inseridos {len(records)} registros"
+                            f"na tabela {model_name}"
                         )
                     else:
                         print(f"[INFO] Nenhum dado encontrado em {file}")

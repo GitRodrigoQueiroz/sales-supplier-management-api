@@ -8,11 +8,12 @@ from passlib.context import CryptContext
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import Session
 
-from backend.app.models import User as UserModel
-from backend.app.schemas import User
-from backend.app.session import ALGORITHM, SECRET_KEY
+from app.models import User as UserModel
+from app.schemas import User
+from app.session import ALGORITHM, SECRET_KEY
 
 cripto_ctx = CryptContext(schemes=["sha256_crypt"])
+
 
 class UserUseCases:
     def __init__(self, db_session: Session):

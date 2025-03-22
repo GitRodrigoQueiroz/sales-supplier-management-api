@@ -3,8 +3,8 @@ from sqlalchemy import insert, update
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import Session
 
-from backend.app.models import Location
-from backend.app.schemas import (
+from app.models import Location
+from app.schemas import (
     LocationCreate,
     LocationUpdate,
 )

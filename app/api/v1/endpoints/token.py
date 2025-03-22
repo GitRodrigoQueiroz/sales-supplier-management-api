@@ -4,9 +4,9 @@ from fastapi import APIRouter, Depends
 from fastapi.security import OAuth2PasswordRequestForm
 from sqlalchemy.orm import Session
 
-from backend.app.services.db_service import get_session
-from backend.app.services.user_service import UserUseCases
-from backend.app.session import ACCESS_TOKEN_EXPIRE_MINUTES
+from app.services.db_service import get_session
+from app.services.user import UserUseCases
+from app.session import ACCESS_TOKEN_EXPIRE_MINUTES
 
 route = APIRouter()
 

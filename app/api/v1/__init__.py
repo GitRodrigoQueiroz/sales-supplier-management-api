@@ -1,1 +1,1 @@
-from backend.app.api.v1.endpoints import location, token, user
+from app.api.v1.endpoints import location, token, user

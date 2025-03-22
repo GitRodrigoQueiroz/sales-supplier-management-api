@@ -1,6 +1,6 @@
-from backend.app.schemas.location import (
+from app.schemas.location import (
     LocationCreate,
     LocationUpdate,
     LocationUpdateData,
 )
-from backend.app.schemas.user import User
+from app.schemas.user import User

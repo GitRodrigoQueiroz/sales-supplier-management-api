@@ -1,10 +1,10 @@
 from fastapi import APIRouter
 from sqlalchemy.orm import Session
 
-from backend.app.core.auth_user import UserUseCases
-from backend.app.schemas import User
-from backend.app.services.auth_service import get_current_user
-from backend.app.services.db_service import get_session
+from app.schemas import User
+from app.services.auth_service import get_current_user
+from app.services.db_service import get_session
+from app.services.user import UserUseCases
 
 route = APIRouter(prefix="/user")
 
