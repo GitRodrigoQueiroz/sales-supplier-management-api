@@ -8,3 +8,6 @@ create-db:
 
 seed-db:
 	python3 -m backend.app.scripts.seed_db
+
+launch-api
+	uvicorn backend:app --reload
