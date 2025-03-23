@@ -123,6 +123,7 @@ Todas essas rotas são protegidas e necessitam autenticação do usuário. Não 
 ## Testes Automatizados
 Para rodar os testes:
 ```sh
+$ make launch-db
 $ pytest
 ```
 

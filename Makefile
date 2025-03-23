@@ -1,7 +1,7 @@
 #!make
 
 launch-db:
-	docker-compose up
+	docker-compose up -d
 
 create-db:
 	python3 -m app.scripts.create_db
