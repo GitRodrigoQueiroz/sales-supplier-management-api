@@ -29,12 +29,3 @@ def get_purchance_by_id(
     purchance_data, part_data = purchance
 
     return {"total_amount": purchance_data.units * part_data.unit_price}
-
-
-@router.get("/supplier/{supplier_id}/warranty/count")
-def get_warranty_count_by_supplier(
-    purchance_id: int,
-    session: Session = get_session,
-):
-    """Get the number of guarantees issued by a specific supplier"""
-    return {"ok"}

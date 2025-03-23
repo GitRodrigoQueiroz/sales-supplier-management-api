@@ -119,8 +119,6 @@ Todas essas rotas são protegidas e necessitam autenticação do usuário. Não 
 
 ### [`Analytcs`] Rotas de Analytcs
 - `GET v1/analytcs/purchance/{purchance_id}/total_amount` - Valor total gasto em uma compra.
-- `GET v1/analytcs/purchance/{supplier_id}/warranty/count` - Número de garantias emitidas por um supplier
-
 
 ## Testes Automatizados
 Para rodar os testes:
