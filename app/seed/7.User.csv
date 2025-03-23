@@ -1,2 +1,4 @@
-"user_name",is_,“is_admin”
+"user_name",password,“is_admin”
 admin,$5$rounds=535000$LzwMn/awrMF/MKPl$7/N5Jx2Nk20kjc0z/yGBDV4Pq4Jw86r1hLFPe2EvMf3,TRUE
+user1,$5$rounds=535000$hhWhKO6BtpdxHcoC$Jsre6YlZrta4e6eogeu5O4c9potN.I6daTUNB3R3l97,FALSE
+user2,$5$rounds=535000$9krTwyz93HyKdGDx$V8/hFIPJdWutV/wTn4jBsbQ5wJQtEAKkrYrBAVfvU.4,FALSE

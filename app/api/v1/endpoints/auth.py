@@ -71,7 +71,6 @@ def delete_user(
 ):
     check_token_exp(payload.get("exp"))
     user = session.query(UserModel).filter(UserModel.id == user_id).first()
-
     if not user:
         return {"error": "User not found"}
 

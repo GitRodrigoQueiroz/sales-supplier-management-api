@@ -125,7 +125,7 @@ Todas essas rotas são protegidas e necessitam autenticação do usuário. Não 
 ## Testes Automatizados
 Para rodar os testes:
 ```sh
-$ pytest tests/
+$ pytest
 ```
 
 ---
