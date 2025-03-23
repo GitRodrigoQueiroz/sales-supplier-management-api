@@ -78,7 +78,7 @@ Esta API implementa um sistema de segurança utilizando **JWT (JSON Web Token)**
 
 A aplicação utiliza uma tabela **user**, onde o primeiro usuário é um **admin**. 
 
-A tabela **user** contém campos para usuário, CPF e senha. A senha e o CPF do usuário é **hasheada** utilizando o algoritmo `sha256_crypt` do pacote `passlib` para garantir a segurança dos dados sensíveis. Nesta aplicação, considera-se que todos os usuários cadastrados (inclusive o admin) têm total acesso à todos os dados cadastrados.
+A tabela **user** contém campos para usuário e senha. A senha do usuário é **hasheada** utilizando o algoritmo `sha256_crypt` do pacote `passlib` para garantir a segurança dos dados sensíveis. Nesta aplicação, considera-se que todos os usuários cadastrados (inclusive o admin) têm total acesso à todos os dados cadastrados.
 
 
 ### 2. OAuth2 com JWT
