@@ -40,7 +40,7 @@ def insert_data_from_csv(engine):
                         session.commit()
                         print(
                             f"[SUCCESS] Inseridos {len(records)} registros"
-                            f"na tabela {model_name}"
+                            f" na tabela {model_name}"
                         )
                     else:
                         print(f"[INFO] Nenhum dado encontrado em {file}")
