@@ -1,1 +1,1 @@
-from app.api.v1.endpoints import auth, location
+from app.api.v1.endpoints import auth, crud, metadata, analytcs

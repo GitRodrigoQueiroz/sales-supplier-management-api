@@ -92,29 +92,34 @@ Para realizar o login, o usuário envia seu **nome de usuário** e **senha**. Ca
 O **JWT** contém informações (payload) sobre o usuário, como o nome de usuário (`sub`), e é assinado com uma **chave secreta** (armazenada na variável `SECRET_KEY`) e um **algoritmo seguro** (definido na variável `ALGORITHM`).
 
 
-## Endpoints Principais
+## ⚡ Endpoints Principais
 
-### Autenticação:
-- `POST /auth/register` - Registro de novo usuário
-- `POST /auth/login` - Login e geração de JWT
+Apenas alguns end-points foram criados para fins de exemplo.
 
-## CRUDs
 
-### Suppliers:
-- `POST /suppliers/` - Criar supplier
-- `GET /suppliers/` - Listar suppliers com filtros
-- `GET /suppliers/{id}` - Buscar supplier por ID
-- `PUT /suppliers/{id}` - Atualizar supplier
-- `DELETE /suppliers/{id}` - Remover supplier
+### [`Auth`] Rotas dedicadas ao processo de autenticação de usuários. 
 
-### Transações:
-- `POST /transactions/` - Criar transação
-- `GET /transactions/` - Listar transações com filtros
+- `POST v1/auth/login` - Login e geração de JWT
+- `POST v1/auth/register_user` - Registro de novo usuário
+- `POST v1/auth/register_user` - Listagem de todos os usuários (exceto o usuário admin)
+- `DELETE v1/auth/delete_user/{user_id}` - Remoção de usuário. Quem tem permissão de remover um usuário é apenas o usuário admin ou ele próprio. Essa rota é protegida e necessita de autenticação do usuário.
 
-### Analytics:
-- `GET /analytics/sales` - Total de vendas por supplier/parte
-- `GET /analytics/warranties` - Número de garantias emitidas
+### [`CRUD's`] Rotas de CRUD's (Create + Read + Update + Delete). 
+Todas essas rotas são protegidas e necessitam autenticação do usuário. Não foi incluído a operação READ, pois é o mesmo do Metadata.
 
+- `POST v1/crud/location/create` - Criação de um novo location
+- `POST v1/crud/location/update` - Atualização de um location
+- `POST v1/crud/location/delete` - Deleção de um location
+
+### [`Metadata`] Rotas de apresentação de metadados de entidades
+- `GET v1/metadata/supplier/get_by_id/{supplier_id}` - Metadados de Suppliers.
+- `GET v1/metadata/supplier/get_by_location` - Metadados de Suppliers com filtros.
+- `GET v1/metadata/part/get_by_id/{part_id}` - Metadados de Parts.
+- `GET v1/metadata/purchance/get_by_id/{purchance_id}` - Metadados de Purchance.
+
+### [`Analytcs`] Rotas de Analytcs
+- `GET v1/analytcs/purchance/{purchance_id}/total_amount` - Valor total gasto em uma compra.
+- `GET v1/analytcs/purchance/{supplier_id}/warranty/count` - Número de garantias emitidas por um supplier
 
 
 ## Testes Automatizados
@@ -124,7 +129,6 @@ $ pytest tests/
 ```
 
 ---
-
 
 ## Autor
 1. Desenvolvido por [Rodrigo Silvestre Queiroz](https://github.com/GitRodrigoQueiroz).

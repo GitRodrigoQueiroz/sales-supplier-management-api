@@ -14,7 +14,11 @@ class Warranty(Base):
     )
     vehicle_id = Column(
         Integer,
-        ForeignKey("dim_vehicle.vehicle_id"),
+        ForeignKey(
+            "dim_vehicle.vehicle_id",
+            ondelete="CASCADE",
+            onupdate="CASCADE",
+        ),
         nullable=False,
         unique=True,
     )
@@ -33,12 +37,20 @@ class Warranty(Base):
     )
     location_id = Column(
         Integer,
-        ForeignKey("dim_locations.location_id"),
+        ForeignKey(
+            "dim_locations.location_id",
+            ondelete="CASCADE",
+            onupdate="CASCADE",
+        ),
         nullable=False,
     )
     purchance_id = Column(
         Integer,
-        ForeignKey("dim_purchances.purchance_id"),
+        ForeignKey(
+            "dim_purchances.purchance_id",
+            ondelete="CASCADE",
+            onupdate="CASCADE",
+        ),
         nullable=False,
     )
 

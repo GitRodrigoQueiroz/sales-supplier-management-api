@@ -12,7 +12,7 @@ from app.models import User as UserModel
 from app.schemas import User
 from app.session import ALGORITHM, SECRET_KEY
 
-oauth2_scheme = OAuth2PasswordBearer(tokenUrl="auth/login")
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/v1/auth/login")
 cripto_ctx = CryptContext(schemes=["sha256_crypt"])
 
 
@@ -86,10 +86,11 @@ class AuthService:
         to_encode.update({"exp": expire})
         return jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
 
-    def user_register(self, user: User):
+    def register_user(self, user: User):
         user_hashed = UserModel(
             user_name=user.user_name,
             password=cripto_ctx.hash(user.password),
+            is_admin=False,
         )
         try:
             self.db_session.add(user_hashed)

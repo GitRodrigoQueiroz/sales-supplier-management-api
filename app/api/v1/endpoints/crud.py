@@ -9,10 +9,10 @@ from app.services.auth import check_token_exp, get_payload
 from app.services.db_service import get_session
 from app.services.location import LocationUseCases
 
-route = APIRouter(prefix="/location", tags=["Location"])
+router = APIRouter(prefix="/crud", tags=["CRUD's"])
 
 
-@route.post("/create")
+@router.post("/location/create")
 def location_create(
     locations_create: list[LocationCreate],
     payload: dict = get_payload,
@@ -24,18 +24,7 @@ def location_create(
     return {"message": "Location created successfully"}
 
 
-# @route.post("/read")
-# def user_register(
-#     locations: list[LocationCreate],
-#     user: dict = get_current_user,
-#     session: Session = get_session,
-# ):
-#     lc = LocationUseCases(db_session=session)
-#     lc.bulk_insert_locations(locations=locations)
-#     return {"message": "Locations registered successfully"}
-
-
-@route.post("/update")
+@router.post("/location/update")
 def location_update(
     locations_update: list[LocationUpdate],
     payload: dict = get_payload,
@@ -47,7 +36,7 @@ def location_update(
     return {"message": "Location updated successfully"}
 
 
-@route.post("/delete")
+@router.post("/location/delete")
 def location_delete(
     location_ids: list[int],
     payload: dict = get_payload,

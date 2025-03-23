@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Boolean, Column, Integer, String
 
 from app.models.base import Base
 
@@ -19,4 +19,8 @@ class User(Base):
     password = Column(
         String(200),
         nullable=False,
+    )
+    is_admin = Column(
+        Boolean,
+        default=False,
     )

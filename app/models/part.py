@@ -11,7 +11,11 @@ class Part(Base):
     part_name = Column(String(255), nullable=False)
     supplier_id = Column(
         Integer,
-        ForeignKey("dim_suppliers.supplier_id", ondelete="CASCADE"),
+        ForeignKey(
+            "dim_suppliers.supplier_id",
+            ondelete="CASCADE",
+            onupdate="CASCADE",
+        ),
         nullable=False,
     )
     unit_price = Column(

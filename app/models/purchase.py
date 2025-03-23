@@ -19,7 +19,11 @@ class Purchase(Base):
     purchance_date = Column(Date, nullable=False)
     part_id = Column(
         Integer,
-        ForeignKey("dim_parts.part_id", ondelete="CASCADE"),
+        ForeignKey(
+            "dim_parts.part_id",
+            ondelete="CASCADE",
+            onupdate="CASCADE",
+        ),
         nullable=False,
     )
     units = Column(
